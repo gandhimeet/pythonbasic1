@@ -18,9 +18,19 @@ This repository hosts a variety of Python exercises that cover topics such as va
 
 The exercises are organized into different categories based on the concepts they cover. Here's an overview of the categories and some example exercises:
 ## Program 1
+**Write a Python program to print the following string in a specific format (see the output).**
 
+Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
+Output :
+
+Twinkle, twinkle, little star,
+	How I wonder what you are! 
+		Up above the world so high,   		
+		Like a diamond in the sky. 
+Twinkle, twinkle, little star, 
+	How I wonder what you are
 ## Program 2
-
+****
 ## Program 3
 
 ## Program 4
