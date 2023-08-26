@@ -1,7 +1,16 @@
 # pythonbasic1
 Basic-1 Programs of Python
-# program 1
+# Program 1
+Write a python Program to print the following string in a specific format.
+Sample String :  
+"Twinkle, twinkle, little star,  
+How I wonder what you are!  
+Up above the world so high,  
+Like a diamond in the sky.  
+Twinkle, twinkle, little star,  
+How I wonder what you are" 
 # program 2
+Write a Python program to find out what version of Python you are using.
 # program 3
 # program 4
 # program 5
