@@ -20,7 +20,9 @@ The exercises are organized into different categories based on the concepts they
 ## Program 1
 **Write a Python program to print the following string in a specific format (see the output).**
 
-Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
+Sample String : 
+
+"Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
 
 Output :
 
@@ -32,7 +34,7 @@ Twinkle, twinkle, little star,
 	How I wonder what you are
 
  
-
+### Code Explanation
 -The first line of the string starts with "Twinkle, twinkle, little star," followed by a newline character \n.
 
 -The second line starts with a tab character \t, followed by "How I wonder what you are!" and another newline character \n.
@@ -45,6 +47,9 @@ Twinkle, twinkle, little star,
 
 ## Program 2
 **Write a Python program to find out what version of Python you are using.**
+
+### Code Explanation
+
 ## Program 3
 **Write a Python program to display the current date and time.
 Sample Output :
