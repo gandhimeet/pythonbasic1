@@ -1,6 +1,6 @@
 # Python Basic Exercises Repository
 
-Welcome to the Python Basic Exercises repository! This repository contains a collection of Python exercises to help you practice and improve your Python programming skills. Each exercise is designed to cover fundamental concepts and features of the Python programming language.
+Welcome to the Python Basic Exercises repository! This repository contains a collection of Python Basic exercises to help you practice and improve your Python programming skills. Each exercise is designed to cover fundamental concepts and features of the Python programming language.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ Welcome to the Python Basic Exercises repository! This repository contains a col
 
 ## Introduction
 
-This repository hosts a variety of Python exercises that cover topics such as variables, data types, loops, conditionals, functions, and more. Whether you're a beginner looking to learn Python or an experienced developer wanting to brush up on your skills, these exercises can be a great resource.
+This repository hosts a variety of Python Basic exercises that cover topics such as variables, data types, loops, conditionals, functions, and more. Whether you're a beginner looking to learn Python or an experienced developer wanting to brush up on your skills, these exercises can be a great resource.
 
 ## Exercises
 
@@ -30,53 +30,85 @@ Twinkle, twinkle, little star,
 Twinkle, twinkle, little star, 
 	How I wonder what you are
 ## Program 2
-****
+**Write a Python program to find out what version of Python you are using.**
 ## Program 3
-
+**Write a Python program to display the current date and time.
+Sample Output :
+Current date and time :
+2014-07-05 14:34:14**
 ## Program 4
-
+**Write a Python program to display the current date and time.
+Sample Output :
+Current date and time :
+2014-07-05 14:34:14**
 ## Program 5
-
+**Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.**
 ## Program 6
-
+**Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
+Sample data : 3, 5, 7, 23
+Output :
+List : ['3', ' 5', ' 7', ' 23']
+Tuple : ('3', ' 5', ' 7', ' 23')**
 ## Program 7
-
+**Write a Python program that accepts a filename from the user and prints the extension of the file.
+Sample filename : abc.java
+Output : java**
 ## Program 8
-
+**Write a Python program to display the first and last colors from the following list.
+color_list = ["Red","Green","White" ,"Black"]**
 ## Program 9
-
+**Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+exam_st_date = (11, 12, 2014)
+Sample Output : The examination will start from : 11 / 12 / 2014**
 ## Program 10
-
+**Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+Sample value of n is 5
+Expected Result : 615**
 ## Program 11
-
+**Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+Sample function : abs()
+Expected Result :
+abs(number) -> number
+Return the absolute value of the argument.**
 ## Program 12
-
+**Write a Python program that prints the calendar for a given month and year.
+Note : Use 'calendar' module.**
 ## Program 13
-
+**Write a Python program to print the following 'here document'.
+Sample string :
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example**
 ## Program 14
-
+**Write a Python program to calculate the number of days between two dates.
+Sample dates : (2014, 7, 2), (2014, 7, 11)
+Expected output : 9 days**
 ## Program 15
-
+**Write a Python program to get the volume of a sphere with radius six.**
 ## Program 16
-
+**Write a Python program to calculate the difference between a given number and 17. If the number is greater than 17, return twice the absolute difference.**
 ## Program 17
-
+**Write a Python program to test whether a number is within 100 of 1000 or 2000.**
 ## Program 18
-
+**Write a Python program to calculate the sum of three given numbers. If the values are equal, return three times their sum.**
 ## Program 19
-
+**Write a Python program to get a newly-generated string from a given string where "Is" has been added to the front. Return the string unchanged if the given string already begins with "Is".**
 ## Program 20
-
+**Write a Python program that returns a string that is n (non-negative integer) copies of a given string.**
 ## Program 21
-
+**Write a Python program that determines whether a given number (accepted from the user) is even or odd, and prints an appropriate message to the user.**
 ## Program 22
-
+**Write a Python program to count the number 4 in a given list.**
 ## Program 23
-
+**Write a Python program to get n (non-negative integer) copies of the first 2 characters of a given string. Return n copies of the whole string if the length is less than 2.**
 ## Program 24
-
+**Write a Python program to test whether a passed letter is a vowel or not.**
 ## Program 25
-
+**Write a Python program that checks whether a specified value is contained within a group of values.
+Test Data :
+3 -> [1, 5, 8, 3] : True
+-1 -> [1, 5, 8, 3] : False**
 ## Program 26
 
 ## Program 27
