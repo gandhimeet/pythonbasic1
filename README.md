@@ -21,6 +21,7 @@ The exercises are organized into different categories based on the concepts they
 **Write a Python program to print the following string in a specific format (see the output).**
 
 Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
+
 Output :
 
 Twinkle, twinkle, little star,
@@ -29,6 +30,19 @@ Twinkle, twinkle, little star,
 		Like a diamond in the sky. 
 Twinkle, twinkle, little star, 
 	How I wonder what you are
+
+ 
+
+-The first line of the string starts with "Twinkle, twinkle, little star," followed by a newline character \n.
+
+-The second line starts with a tab character \t, followed by "How I wonder what you are!" and another newline character \n.
+
+-The third and fourth lines have two tabs \t\t before the phrases "Up above the world so high," and "Like a diamond in the sky." They are followed by newline characters \n.
+
+-The fifth line starts with "Twinkle, twinkle, little star," and ends with a newline character \n.
+
+-The sixth line is similar to the second line, starting with a tab character \t, followed by "How I wonder what you are."
+
 ## Program 2
 **Write a Python program to find out what version of Python you are using.**
 ## Program 3
