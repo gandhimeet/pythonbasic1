@@ -154,40 +154,133 @@ Output : java
 
 -Display Extension then prints out the extracted extension of the file name to the console, using the -1 index to access the last part of the extension list, which is typically the file's extension.
 
-
 ## Program 8
 **Write a Python program to display the first and last colors from the following list.
 color_list = ["Red","Green","White" ,"Black"]**
+
+### Code Explanation
+-The code creates a list named color_list containing four color names: "Red," "Green," "White," and "Black."
+
+-The String formatting uses string formatting with the % operator to print the first and last elements of the color_list list. %s is a placeholder for string values.
+
+-color_list[0] accesses the first element ("Red") of the list, and color_list[-1] accesses the last element ("Black").
+
+-The code prints the result as "Red Black," which are the first and last color names in the list, separated by a space.
+
 ## Program 9
 **Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+
 exam_st_date = (11, 12, 2014)
+
 Sample Output : The examination will start from : 11 / 12 / 2014**
+
+### Code Explanation
+-exam_st_date is a variable used to store the examination date, which is set to (11, 12, 2023). This date is represented as a tuple with day, month, and year components.
+
+-The print statement is used to display a formatted message. It uses string formatting to insert the values from the exam_st_date tuple into the message.
+
+-The "%i / %i / %i" within the string is a format specifier. The %i placeholders are placeholders for integer values, and they are used to indicate where the values from the exam_st_date tuple should be inserted.
+
+-When the code is executed, it will print a message that reads something like "The examination will start from: 11 / 12 / 2023", where the numbers 11, 12, and 2023 are replaced by the values from the exam_st_date tuple.
+
 ## Program 10
 **Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+
 Sample value of n is 5
+
 Expected Result : 615**
+
+### Code Explanation
+-This Python code takes an integer input 'n' from the user.
+
+-It creates three new variables: 'n1', 'n2', and 'n3', each containing 'n' repeated 1, 2, and 3 times, respectively, by formatting the input as strings and converting them back to integers.
+
+-It calculates the sum of 'n1', 'n2', and 'n3'.
+
+-At the end it prints the result as "The Value of n+nn+nnn is:" followed by the sum of 'n1', 'n2', and 'n3' converted to a string.
+
 ## Program 11
 **Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+
 Sample function : abs()
-Expected Result :
-abs(number) -> number
-Return the absolute value of the argument.**
+
+Expected Result :abs(number) -> number Return the absolute value of the argument.**
+
+### Code Explanation
+-The code snippet uses the abs() function in Python, which is a built-in function for calculating the absolute value of a number.
+
+-It prints the documentation string (docstring) of the abs() function using abs.__doc__. The docstring is a descriptive text that provides information about what the function does and how to use it.
+
+-In this case, print(abs.__doc__) will display the documentation for the abs() function, helping users understand its purpose and usage.
+
+-This code is a simple example of how to access and display the docstring of a Python function using the .__doc__ attribute.
+
 ## Program 12
 **Write a Python program that prints the calendar for a given month and year.
+
 Note : Use 'calendar' module.**
+
+### Code Explanation
+-The code begins by importing the calendar module, which provides various functions and classes for working with calendars, including generating calendar views for different years and months.
+
+-It prompts the user to enter two integers: one for the year (stored in the variable y) and another for the month (stored in the variable m). The int(input(...)) function combination is used to read integer input from the user via the console.
+
+-After obtaining the user's input for the year and month, it utilizes the calendar.month(y, m) function to generate and display a calendar view for the specified year and month. This function takes the year (y) and month (m) as arguments and returns a formatted string representing the calendar for that specific month.
+
+-At the end the code prints the generated calendar string to the console, displaying the calendar for the user-provided year and month.
+
+
 ## Program 13
 **Write a Python program to print the following 'here document'.
+
 Sample string :
+
 a string that you "don't" have to escape
+
 This
+
 is a ....... multi-line
+
 heredoc string --------> example**
+
+### Code Explanation
+-The code uses triple double-quotes (""") to define a multi-line string. This allows you to include both single and double quotes within the string without escaping them.
+
+-Inside the string, there is an example of escaping double quotes using the backslash ("don't"). This means the double quotes around "don't" are included as part of the string.
+
+-The string spans multiple lines, and the indentation is preserved as part of the string content. So, the spaces before "This" and "is a..." are part of the string.
+
+-The string content itself includes line breaks and various whitespace characters, which are also preserved as-is. The string ends with the text "example", but it includes all the line breaks and indentation within the triple-quoted string.
+
+
 ## Program 14
 **Write a Python program to calculate the number of days between two dates.
+
 Sample dates : (2014, 7, 2), (2014, 7, 11)
+
 Expected output : 9 days**
+
+### Code Explanation
+-The code imports the date class from the datetime module, allowing you to work with date objects.
+
+-It creates a firstdate variable and assigns it the date June 22, 2023.
+
+-It creates a lastdate variable and assigns it the date June 26, 2023.
+
+-It calculates the difference between lastdate and firstdate and stores it in the delta variable. Then, it prints the number of days between the two dates using delta.days.
+
 ## Program 15
 **Write a Python program to get the volume of a sphere with radius six.**
+
+### Code Explanation
+-The code begins by importing the mathematical constant pi from the math module.
+
+-Defining the radius : It sets the variable 'r' to a value of 6.0, which represents the radius of a sphere.
+
+-It calculates the volume of the sphere using the formula for the volume of a sphere, which is (4/3)πr^3, and stores the result in the 'volume' variable.
+
+-At the end it prints out a message that displays the radius and calculated volume of the sphere using the 'print' function. It converts numerical values to strings and combines them with text for the output message.
+
 ## Program 16
 **Write a Python program to calculate the difference between a given number and 17. If the number is greater than 17, return twice the absolute difference.**
 ## Program 17
