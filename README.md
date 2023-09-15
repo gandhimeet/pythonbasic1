@@ -140,8 +140,21 @@ Tuple : ('3', ' 5', ' 7', ' 23')
 
 ## Program 7
 **Write a Python program that accepts a filename from the user and prints the extension of the file.
-Sample filename : abc.java
-Output : java**
+
+Sample filename : abc.java**
+
+Output : java
+
+### Code Explation
+-The code prompts the user to enter the name of a file, including its extension, and stores it in the filename variable.
+
+-Display File Name prints out the name of the entered file, including the extension, to the console.
+
+-The code splits the filename using the dot (.) as a separator and stores the resulting parts in the extension variable. This effectively extracts the file's extension.
+
+-Display Extension then prints out the extracted extension of the file name to the console, using the -1 index to access the last part of the extension list, which is typically the file's extension.
+
+
 ## Program 8
 **Write a Python program to display the first and last colors from the following list.
 color_list = ["Red","Green","White" ,"Black"]**
