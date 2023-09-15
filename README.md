@@ -59,11 +59,14 @@ Twinkle, twinkle, little star,
 
 ## Program 3
 **Write a Python program to display the current date and time.
+
 Sample Output :
+
 Current date and time :
 2014-07-05 14:34:14**
 
 Output:
+
 Current date and time:2014-07-05 14:34:14
 
 ### Code Explanation
@@ -74,15 +77,22 @@ Current date and time:2014-07-05 14:34:14
 -The strftime() method is used to format the now datetime object into a string with a specific format. The format string "%Y-%m-%d %H:%M:%S" is used to specify how the date and time should be displayed
 
 -%Y: Year with century as a decimal number (e.g., 2023).
+ 
  %m: Month as a zero-padded decimal number (01, 02, ..., 12).
+
  %d: Day of the month as a zero-padded decimal number (01, 02, ..., 31).
+
  %H: Hour (24-hour clock) as a zero-padded decimal number (00, 01, ..., 23).
+ 
  %M: Minute as a zero-padded decimal number (00, 01, ..., 59).
+ 
  %S: Second as a zero-padded decimal number (00, 01, ..., 59)
 
 ## Program 4
 **Write a Python program that calculates the area of a circle based on the radius entered by the user.
+
 Sample Output :
+
 r = 1.1
 Area = 3.8013271108436504**
 
@@ -99,12 +109,35 @@ It then takes the user's input as a string and converts it into a floating-point
 ## Program 5
 **Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.**
 
+### Code Explanation
+-The code prompts the user to enter their first name and last name using the input function and stores these values in the firstname and lastname variables, respectively.
+
+- In last line It concatenates the user's last name, first name, and a greeting message ("HEY!") into a single string using the + operator.
+
+- In type conversion converts the firstname and lastname variables to strings using the str() function, ensuring they can be concatenated with other strings.
+
+- At the end it prints the combined string, which includes the greeting, last name, and first name, effectively displaying a reverse order of the user's name with a greeting.
+
 ## Program 6
 **Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
-Sample data : 3, 5, 7, 23
+
+Sample data : 3, 5, 7, 23**
+
 Output :
+
 List : ['3', ' 5', ' 7', ' 23']
-Tuple : ('3', ' 5', ' 7', ' 23')**
+
+Tuple : ('3', ' 5', ' 7', ' 23')
+
+### Code Explanation
+-First line of code start by asking the user to input some values separated by commas using the input function. The entered values are stored in the variable values.
+
+-The input values are split into a list using the split method with a comma , as the separator. The resulting list is stored in a variable called list.
+
+-The list is converted into a tuple using the tuple() constructor, and the resulting tuple is stored in a variable named tuple.
+
+-At the end the code prints the tuple variable, displaying the values as a tuple. Note that using tuple as a variable name might not be a good practice since it overwrites the built-in tuple type.
+
 ## Program 7
 **Write a Python program that accepts a filename from the user and prints the extension of the file.
 Sample filename : abc.java
