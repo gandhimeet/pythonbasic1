@@ -112,11 +112,11 @@ It then takes the user's input as a string and converts it into a floating-point
 ### Code Explanation
 -The code prompts the user to enter their first name and last name using the input function and stores these values in the firstname and lastname variables, respectively.
 
-- In last line It concatenates the user's last name, first name, and a greeting message ("HEY!") into a single string using the + operator.
+-In last line It concatenates the user's last name, first name, and a greeting message ("HEY!") into a single string using the + operator.
 
-- In type conversion converts the firstname and lastname variables to strings using the str() function, ensuring they can be concatenated with other strings.
+-In type conversion converts the firstname and lastname variables to strings using the str() function, ensuring they can be concatenated with other strings.
 
-- At the end it prints the combined string, which includes the greeting, last name, and first name, effectively displaying a reverse order of the user's name with a greeting.
+-At the end it prints the combined string, which includes the greeting, last name, and first name, effectively displaying a reverse order of the user's name with a greeting.
 
 ## Program 6
 **Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
