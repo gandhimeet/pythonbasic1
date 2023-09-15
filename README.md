@@ -49,19 +49,56 @@ Twinkle, twinkle, little star,
 **Write a Python program to find out what version of Python you are using.**
 
 ### Code Explanation
+-The first line imports the sys module, which is a built-in module in Python that provides access to system-specific parameters and functions.
+
+-The sys.version attribute contains a string that represents the version of Python, including details like the release version, build information, and compiler used to build Python.
+
+-The elenenth line prints another string, "Python Version INFO," to the console to indicate the type of information being displayed next.
+
+-The sys.version_info attribute contains a tuple of integers representing the major, minor, micro, release level, and serial of the Python interpreter.
 
 ## Program 3
 **Write a Python program to display the current date and time.
 Sample Output :
 Current date and time :
 2014-07-05 14:34:14**
+
+Output:
+Current date and time:2014-07-05 14:34:14
+
+### Code Explanation
+-The first line imports the datetime module, which provides classes and methods for working with dates and times.
+
+-The second line uses the now() method from the datetime module to retrieve the current date and time and stores it in the now variable. This gives you the current date and time as a datetime object.
+
+-The strftime() method is used to format the now datetime object into a string with a specific format. The format string "%Y-%m-%d %H:%M:%S" is used to specify how the date and time should be displayed
+
+-%Y: Year with century as a decimal number (e.g., 2023).
+ %m: Month as a zero-padded decimal number (01, 02, ..., 12).
+ %d: Day of the month as a zero-padded decimal number (01, 02, ..., 31).
+ %H: Hour (24-hour clock) as a zero-padded decimal number (00, 01, ..., 23).
+ %M: Minute as a zero-padded decimal number (00, 01, ..., 59).
+ %S: Second as a zero-padded decimal number (00, 01, ..., 59)
+
 ## Program 4
-**Write a Python program to display the current date and time.
+**Write a Python program that calculates the area of a circle based on the radius entered by the user.
 Sample Output :
-Current date and time :
-2014-07-05 14:34:14**
+r = 1.1
+Area = 3.8013271108436504**
+
+### Code Explanation:
+-The first line of code importing the pi constant from the math module. pi represents the mathematical constant π (pi), which is approximately equal to 3.141592653589793.
+
+-The code prompts the user to enter the radius of a circle by displaying the message "Enter the Radius of the circle:".
+It then takes the user's input as a string and converts it into a floating-point number (decimal number) using float(input(...)).
+
+-The code calculates the area of a circle using the formula for the area of a circle: A = π * r^2, where A is the area and r is the radius.Then it converts the result to a string using str(...) to prepare it for concatenation.
+
+-At end the code displays the result as a string using the print(...) function.
+
 ## Program 5
 **Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.**
+
 ## Program 6
 **Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
 Sample data : 3, 5, 7, 23
