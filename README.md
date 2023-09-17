@@ -283,14 +283,64 @@ Expected output : 9 days**
 
 ## Program 16
 **Write a Python program to calculate the difference between a given number and 17. If the number is greater than 17, return twice the absolute difference.**
+
+### Code Explanation 
+-The code defines a function called difference that takes one argument, n.
+
+-Inside the function, it checks if the value of n is less than or equal to 17. If it is, it calculates the difference between 17 and n and returns it. If n is greater than 17, it calculates twice the difference between n and 17 and returns that value.
+
+-The code then calls the difference function with two different values, 22 and 10, and prints the results.
+
+-When n is 22, the function returns 10 because it falls into the else branch and calculates (22-17)*2, which equals 10. When n is 10, the function returns 7 because it falls into the if branch and calculates 17-10, which equals 7.
+
 ## Program 17
 **Write a Python program to test whether a number is within 100 of 1000 or 2000.**
+
+### Code Explanation
+-The code defines a function called near_thousand that takes one argument, n.
+
+-Inside the function, it checks if the absolute difference between n and 1000 is less than or equal to 100 OR if the absolute difference between n and 2000 is less than or equal to 100.
+
+-The function returns True if either of these conditions is met, indicating that the input number is "near" either 1000 or 2000; otherwise, it returns False.
+
+-The code then calls the near_thousand function with various numbers and prints the results, showing whether each number is "near" 1000 or 2000 based on the defined criteria.
+
 ## Program 18
 **Write a Python program to calculate the sum of three given numbers. If the values are equal, return three times their sum.**
+
+### Code Explanation
+-Function Definition: The code defines a function called sum_thrice that takes three arguments, x, y, and z.
+
+-Inside the function, it calculates the sum of the three input values x, y, and z and stores it in a variable called sum.
+
+-It then checks if x, y, and z are all equal by using the condition x == y == z.
+
+-If x, y, and z are all equal, it multiplies the sum by 3 (triples it). Otherwise, it returns the original sum.
+
 ## Program 19
 **Write a Python program to get a newly-generated string from a given string where "Is" has been added to the front. Return the string unchanged if the given string already begins with "Is".**
+
+### Code Explanation
+-The code defines a function called new_string that takes one parameter, text.
+
+-Inside the function, there's a conditional check using an if statement. It checks if the length of the text is greater than or equal to 2 characters and if the first two characters of text are "Is."
+
+-If the condition is met, meaning the input text already starts with "Is" or is at least two characters long, the function returns text as it is. Otherwise, it adds "Is" to the beginning of text and returns the modified string.
+
+-The code then calls the new_string function twice: First with the argument "Array," and it prints the result. In this case, the function adds "Is" to "Array," so it prints "IsArray." Second with the argument "IsEmpty," and it prints the result. Since "IsEmpty" already starts with "Is," the function returns it as it is, so it prints "IsEmpty."
+
 ## Program 20
 **Write a Python program that returns a string that is n (non-negative integer) copies of a given string.**
+
+### Code Explanation
+-The code defines a function named larger_string that takes two arguments: text (a string) and n (an integer).
+
+-Inside the function, a variable named result is initialized with a single space character (' '). This variable will store the repeated string.
+
+-The code uses a for loop that runs n times to concatenate the text with the result variable. This effectively repeats the text n times and stores the result in the result variable.
+
+-The code demonstrates the larger_string function by calling it twice with different inputs and printing the results. The first call repeats 'Meet Gandhi' twice and prints the result, and the second call repeats 'Rutvi Rathod' three times and prints the result.
+
 ## Program 21
 **Write a Python program that determines whether a given number (accepted from the user) is even or odd, and prints an appropriate message to the user.**
 ## Program 22
