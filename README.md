@@ -480,24 +480,135 @@ of a triangle and compute its area.**
 -The user sees the calculated area of the triangle as the final output on the screen.
 
 ## Program 31
+**Write a Python program that computes the greatest common divisor (GCD) 
+of two positive integers.**
+
+### Code Explanation
+-This code defines a function called gcd (Greatest Common Divisor) that calculates the greatest common divisor of two numbers, x and y.
+
+-It initializes gcd to 1. If x is evenly divisible by y, it returns y as the greatest common divisor.
+
+-Otherwise, it iterates through a range of numbers from y/2 down to 1, checking if both x and y are divisible by the current number (k). If they are, it updates the gcd with the current k value and breaks out of the loop.
+
+-The code then calls the gcd function with different sets of parameters and prints the results, finding the greatest common divisors of pairs of numbers: (12, 17), (4, 6), and (336, 360).
 
 ## Program 32
+**Write a Python program to find the least common multiple (LCM) of two positive integers.**
+
+### Code Explanation
+-This code defines a function named lcm that calculates the least common multiple (LCM) of two numbers, x and y. It determines the greater of the two input numbers and assigns it to the variable z.
+
+-Then, it enters a while loop that continues until it finds a number (z) that is divisible by both x and y (i.e., their remainders are both zero when divided by z).
+
+-Once it finds such a number, it assigns it to the variable lcm and breaks out of the loop.
+
+-Finally, the function returns the calculated LCM. The code then demonstrates the usage of the lcm function by calling it with two different sets of parameters and printing the results: lcm(4, 6) and lcm(15, 17).
 
 ## Program 33
+**Write a Python program to sum three given integers. 
+However, if two values are equal, the sum will be zero.**
+
+### Code Explanation
+-The code begins by defining a function named sum_three that takes three parameters: x, y, and z. This function is intended to calculate the sum of these three numbers, with a special condition.
+
+-Inside the function, there is a conditional check using the if statement. It checks whether x is equal to y, y is equal to z, or x is equal to z. If any of these conditions are true, it implies that at least two of the three input values are the same.
+
+-If the conditional check in the previous step evaluates to true (i.e., two or more input values are the same), the sum variable is set to 0. This means that the sum of the three numbers is zero in this case.
+
+-Finally, the function returns the value of the sum variable, which is either the sum of x, y, and z or 0, depending on the condition. The code then calls this sum_three function with four different sets of input values and prints the results.
 
 ## Program 34
+**Write a Python program to sum two given integers. 
+However, if the sum is between 15 and 20 it will return 20.**
+
+### Code Expllanation
+-The code defines a Python function named sum that takes two parameters, x and y. This function is designed to calculate the sum of x and y.
+
+-Inside the function, the sum of x and y is calculated and stored in a variable also named sum. However, it's important to note that using the same name as a built-in function or keyword (in this case, sum) is generally not recommended, as it can lead to confusion and unexpected behavior. This code overwrites the built-in sum function temporarily.
+
+-After calculating the sum, there is a conditional check to see if the sum falls within the range of 15 (inclusive) to 20 (exclusive). If the sum is within this range, the function returns the integer value 20.
+
+-Finally, the code demonstrates the usage of the sum function by calling it with two sets of different arguments and printing the results
 
 ## Program 35
+**Write a Python program that returns true if the two given integer values 
+are equal or their sum or difference is 5.**
+
+### Code Explanation
+-The code defines a Python function named test_number that takes two parameters, x and y.
+
+-Inside the test_number function, there is a conditional statement that checks three conditions using logical OR (or) operators: x == y: This condition checks if x is equal to y. abs(x - y) == 5: This condition checks if the absolute difference between x and y is equal to 5. (x + y) == 5: This condition checks if the sum of x and y is equal to 5.
+
+-If any of the above conditions are true, the function returns True. This means that if either x is equal to y, the absolute difference between x and y is 5, or the sum of x and y is 5, the function will return True.
+If none of the conditions are met, the function returns False
+
+-The code demonstrates the use of the test_number function by calling it four times with different sets of values and printing the results
 
 ## Program 36
+**Write a Python program to add two objects if both objects are integers.**
+
+### Code Explanation
+-The code defines a Python function called add(x, y), which takes two parameters, x and y. This function is designed to perform addition on these parameters.
+
+-Inside the function, there's an input validation check. It uses the isinstance() function to verify whether both x and y are of the integer type (int). If either x or y is not an integer, the function returns the string "Inputs must be Integers.". This is done to ensure that only valid integer inputs are accepted for addition.
+
+-If both x and y are integers, the function proceeds to perform the addition operation by using the + operator. It calculates the sum of x and y.
+
+-The code demonstrates the usage of the add function by making four function calls
 
 ## Program 37
+**Write a Python program that displays your name, age, and address on three different lines.**
+
+### Code Explanation
+-The code starts by prompting the user to enter their name, age, and address using the input() function. input("Enter Your Name:") waits for the user to input their name as a string and assigns it to the variable name.input("Enter Your Age:") waits for the user to input their age as an integer (which is converted from the input string) and assigns it to the variable age.input("Enter Your Address:") waits for the user to input their address as a string and assigns it to the variable addr.
+
+-The code uses three variables to store the user's input: name, age, and addr. These variables hold the user-provided information for further use.
+
+-The code then proceeds to print out the collected information in a formatted manner. It uses the format() method to replace the placeholders {}, which are inside the string, with the values stored in the name, age, and addr variables. 
+
+-The resulting output is displayed with labels for each piece of information, separated by line breaks, making it more readable.
 
 ## Program 38
+**Write a Python program to solve (x + y) * (x + y).
+Test Data : x = 4, y = 3
+Expected Output : (4 + 3) ^ 2) = 49**
+
+### Code Explanation
+-The code begins by taking user input for two integer values, X and Y, using the input function. It prompts the user to enter these values by displaying a message. The int() function is used to convert the user's input into integer data types, ensuring that the entered values can be used for mathematical operations.
+
+-After collecting the values of X and Y from the user, the code calculates a mathematical expression: (X + Y) ^ 2. This is achieved by assigning the result of the expression to the variable result. The expression x*x + 2*x*y + y*y is used to compute the square of the sum of X and Y, which involves squaring X, squaring Y, and adding twice the product of X and Y to the result.
+
+-The code employs the print function to display the result of the expression in a user-friendly format.
+It uses the .format() method to insert the values of X, Y, and the computed result into a string. Inside the string, {} placeholders are used to indicate where these values should be inserted.
+
+-Finally, the code prints the formatted string containing the values of X, Y, and the computed result to the console. This output provides the user with the squared value of the sum of X and Y in a clear and readable format.
 
 ## Program 39
+**Write a Python program to compute the future value of a specified principal amount,
+rate of interest, and number of years.
+Test Data : amt = 10000, int = 3.5, years = 7
+Expected Output : 12722.79**
+
+### Code Explanation 
+-amt = 10000: This line initializes a variable amt with a value of 10,000. It likely represents an initial investment amount. int = 3.5: This line initializes a variable int with a value of 3.5. However, it's important to note that "int" is a reserved keyword in Python and should not be used as a variable name. It might be better to use a different name, like interest_rate, to avoid conflicts. years = 7: This line initializes a variable years with a value of 7, indicating the number of years for which the investment will grow.
+
+-future_value = amt * ((1 + (0.01 * int)) ** years): This line calculates the future value of the investment using the formula for compound interest. It takes the initial amount (amt), multiplies it by the compound interest formula, and assigns the result to the variable future_value. The formula used here is: future_value = principal * (1 + (interest_rate / 100)) ^ time, where principal is the initial amount, interest_rate is the annual interest rate in percentage (converted to decimal form), and time is the number of years.
+
+-print(round(future_value, 2)): This line prints the calculated future value after rounding it to two decimal places. The round() function is used to ensure that the result is displayed with only two decimal points for better readability.
+
+-When you run this code, it will calculate the future value of the 10,000 investment with a 3.5% annual interest rate over 7 years and print the result rounded to two decimal places. The printed value will represent how much the initial investment will grow to after 7 years under the given interest rate.
 
 ## Program 40
+**Write a Python program to calculate the distance between the points (x1, y1) and (x2, y2).**
+
+### Code Explanation
+-The code begins by importing the math module, which provides mathematical functions and constants in Python. In this case, it is used to access the sqrt function, which will be used to calculate the square root of a value.
+
+-Two points, p1 and p2, are declared as lists. Each point is represented as a list with two elements: the first element represents the x-coordinate, and the second element represents the y-coordinate. In this code, p1 is [4, 0], and p2 is [6, 6].
+
+-The code calculates the Euclidean distance between p1 and p2 using the Euclidean distance formula. This formula computes the square root of the sum of the squares of the differences between the x-coordinates and the y-coordinates of the two points. The calculated distance is stored in the variable distance.
+
+-Finally, the code prints the calculated distance using the print function. The result is the Euclidean distance between p1 and p2, which is the straight-line distance between these two points in the 2D plane. In this example, the result will be printed to the console.
 
 ## Program 41
 
