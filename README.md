@@ -732,12 +732,56 @@ if a Python shell is executing in 32bit or 64bit mode on OS.**
 -After the loop completes all 10 iterations, it prints a single new line character ('\n'). This new line character moves the cursor to the next line, ensuring that any subsequent output appears on a new line.
 
 ## Program 51
+**Write a Python program to determine the profiling of Python programs.
+
+Note: A profile is a set of statistics that describes how often and 
+for how long various parts of the program executed. 
+These statistics can be formatted into reports via the pstats module.**
+
+### Code Explanation
+-The code starts by importing the cProfile module, which is used for profiling Python programs. Profiling helps in analyzing and measuring the performance of code to identify bottlenecks and optimize it.
+
+-A function named sum is defined. This function simply calculates the sum of 1 and 2 and then prints the result (3) to the console.
+
+-The cProfile.run() function is used to profile the sum() function. This means that when the code is executed, cProfile will gather information about the execution of the sum() function, such as the time it takes to run and the number of function calls.
+
+-When this code is run, cProfile will collect profiling data for the sum() function and display detailed information about its execution, including the time taken by each function call and the total time spent in the function. This information can be valuable for performance analysis and optimization.
 
 ## Program 52
+**Write a Python program to print to STDERR.**
+
+### Code Explanation
+-The code begins with importing two modules: __future__ and sys. from __future__ import print_function is used to ensure compatibility with Python 3.x print syntax even in Python 2.x, where the print statement is used. This is done to make the code forward-compatible.
+
+-The code defines a custom function called eprint(*args, **kwargs). This function is designed to mimic the behavior of the standard print function, but it directs the output to the standard error stream (sys.stderr) rather than the standard output (sys.stdout). This can be useful for error messages and debugging.
+
+-After defining the eprint function, the code prints the string "abc", "efg", and "xyz" using the standard print function. It specifies the separator sep="--", which means that the strings will be separated by "--" when printed to the standard output.
+
+-It's important to note that the strings "abc", "efg", and "xyz" are printed to the standard output (usually the console), not to the standard error. This is because the eprint function is not used for this specific print statement.
 
 ## Program 53
+**Write a Python program to access environment variables.**
+
+### Code Explanation
+-The code begins by importing the 'os' module, which is a built-in Python module used for interacting with the operating system. It provides functions to access various operating system-related functionalities, including environment variables.
+
+-The code uses the 'os.environ' dictionary to access and print all the environment variables currently set on the system. Environment variables are system-wide settings that store information such as configuration data, system paths, and user preferences.
+
+-It then specifically accesses and prints the value of the 'TEMP' environment variable using 'os.environ['TEMP']'. The 'TEMP' variable typically points to the temporary directory or folder used by the operating system to store temporary files.
+
+-Similarly, the code accesses and prints the value of the 'PATH' environment variable using 'os.environ['PATH']'. The 'PATH' variable is crucial as it specifies a list of directories where the operating system searches for executable files and programs when a user enters a command in the terminal.
 
 ## Program 54
+**Write a Python program to get the current username.**
+
+### Code Explanation
+-The code begins by importing the getpass module, which is a standard Python library module used for handling password input and retrieving user-related information securely.
+
+-It uses the getuser() function from the getpass module to retrieve and print the current username of the user running the script. This username corresponds to the user currently logged into the system.
+
+-While not explicitly mentioned in the code, this script is typically used in command-line applications to provide user-specific functionality or personalize the user's experience based on their username.
+
+-The getpass module is often used for handling sensitive information like passwords. In this case, it's only retrieving the username, which is not sensitive. However, the module is designed to securely handle user input, making it a good choice for dealing with potentially confidential data.
 
 ## Program 55
 
