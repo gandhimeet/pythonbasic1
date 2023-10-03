@@ -784,18 +784,76 @@ These statistics can be formatted into reports via the pstats module.**
 -The getpass module is often used for handling sensitive information like passwords. In this case, it's only retrieving the username, which is not sensitive. However, the module is designed to securely handle user input, making it a good choice for dealing with potentially confidential data.
 
 ## Program 55
+**Write a Python program to find local IP addresses using Python's stdlib.**
+
+### Code Explanation
+-The code begins by importing the getpass module, which is a standard Python library module used for handling password input and retrieving user-related information securely.
+
+-It uses the getuser() function from the getpass module to retrieve and print the current username of the user running the script. This username corresponds to the user currently logged into the system.
+
+-While not explicitly mentioned in the code, this script is typically used in command-line applications to provide user-specific functionality or personalize the user's experience based on their username.
+
+-The getpass module is often used for handling sensitive information like passwords. In this case, it's only retrieving the username, which is not sensitive. However, the module is designed to securely handle user input, making it a good choice for dealing with potentially confidential data.
 
 ## Program 56
 
+
 ## Program 57
+**Write a Python program to get the execution time of a Python method.**
+
+### Code Explanation
+-The code begins by importing the time module, which allows us to work with time-related functions and measure the execution time of a specific task.
+
+-This function calculates the sum of all numbers from 1 to 'n'. It includes the following steps:
+start_time is initialized to record the current time.
+A variable s is initialized to 0 to store the sum.
+A for loop iterates from 1 to 'n', adding each number to 's'.
+end_time is recorded to capture the time after the sum calculation.
+The time taken to compute the sum is stored in the result variable.
+The function returns both the sum 's' and the time taken to calculate it.
+
+-The code takes user input to specify the value of 'n', which represents the range of numbers to be summed.
+
+-Finally, the code prints the value of 'n' and the time taken to calculate the sum from 1 to 'n' using the sum_of_n_numbers function. This provides the user with the result of the sum as well as the time it took to perform the calculation.
 
 ## Program 58
+**Write a Python program to sum the first n positive integers.**
+
+### Code Explanation
+-The code starts by taking user input using the input function, asking the user to input a number. The entered value is converted to an integer using int() and stored in the variable n.
+
+-The code calculates the sum of the first 'n' positive integers using the formula (n * (n + 1)) / 2. This formula is a well-known arithmetic progression formula for finding the sum of consecutive positive integers.
+
+-The calculated sum is stored in the variable sum_num.
+
+-Finally, the code prints a message that displays the sum of the first 'n' positive integers using the value stored in sum_num. The message includes the value of 'n' entered by the user, providing a clear output to the user.
 
 ## Program 59
+**Write a Python program to convert height (in feet and inches) to centimeters.**
+
+### Code Explanation
+-The code starts by prompting the user to input their height. It specifically asks the user for their height in feet and inches.
+
+-The code takes the user's input in feet and inches and converts it to centimeters. It does this by first converting the feet to inches and then adding the inches provided by the user. The result is stored in the variable h_cm.
+
+-The calculated height in centimeters is rounded to one decimal place using the round function.
+
+-Finally, the code prints out the user's height in centimeters, displaying it as an integer followed by "cm." This is done using the % operator to format the output string.
 
 ## Program 60
+**Write a Python program to calculate the hypotenuse of a right angled triangle.**
+
+### Code Explanation
+-The code begins by importing the sqrt function from the math module. This function is used later to calculate the square root.
+
+-The code prompts the user to input the lengths of the shorter sides of a right-angled triangle. It asks the user for the lengths of side 'a' and side 'b' separately, and these values are expected to be floating-point numbers.
+
+-Using the input values for sides 'a' and 'b', the code calculates the length of the hypotenuse ('c') of the right-angled triangle using the Pythagorean theorem: c = sqrt(a**2 + b**2). It squares the values of 'a' and 'b', adds them together, and then takes the square root of the result.
+
+-Finally, the code prints out the calculated length of the hypotenuse, providing the result in the form of a message: "The length of the hypotenuse is:" followed by the calculated value of 'c'.
 
 ## Program 61
+
 
 ## Program 62
 
