@@ -853,37 +853,369 @@ The function returns both the sum 's' and the time taken to calculate it.
 -Finally, the code prints out the calculated length of the hypotenuse, providing the result in the form of a message: "The length of the hypotenuse is:" followed by the calculated value of 'c'.
 
 ## Program 61
+**Write a Python program to convert the distance (in feet) to inches, yards, and miles.**
 
+### Code Explanation
+This Python code is designed to perform distance unit conversions. It takes an input from the user in feet and then converts that distance into inches, yards, and miles. Here's a breakdown of the code:
+
+1. The user is prompted to input a distance in feet, and the entered value is stored in the variable `d_ft` using the `input()` function. The `int()` function is used to convert the input to an integer since distance in feet is typically represented as a whole number.
+
+2. The code calculates the distance in inches by multiplying the distance in feet by 12. This calculation is stored in the variable `d_inches`.
+
+3. The code calculates the distance in yards by dividing the distance in feet by 3.0 (since there are 3 feet in a yard), and the result is stored in the variable `d_yards`.
+
+4. The code calculates the distance in miles by dividing the distance in feet by 5280.0 (since there are 5280 feet in a mile), and the result is stored in the variable `d_miles`.
+
+5. Finally, the code prints out the calculated distances in inches, yards, and miles using the `print()` function. It uses string formatting to include the values stored in the variables `d_inches`, `d_yards`, and `d_miles` in the output message.
+
+So, when you run this code, you'll be prompted to enter a distance in feet, and it will then convert and display that distance in inches, yards, and miles.
 
 ## Program 62
+**Write a Python program to convert all units of time into seconds.**
+
+### Code Explanation
+This code is a Python script that prompts the user to input values for days, hours, minutes, and seconds, and then calculates the total time in seconds. Let's break down the code step by step:
+
+1. The code starts by using the `input` function to prompt the user to enter a number of days. The input is converted to an integer using `int()` and then multiplied by 3600 (seconds in an hour) and 24 (hours in a day). The result is stored in the variable `days`.
+
+2. Next, the code prompts the user to input a number of hours in a similar manner. The input is converted to an integer and then multiplied by 3600 to convert hours to seconds. The result is stored in the variable `hours`.
+
+3. The code continues to prompt the user to input a number of minutes, which is again converted to an integer and multiplied by 60 (seconds in a minute). The result is stored in the variable `minutes`.
+
+4. Finally, the code prompts the user to input a number of seconds. The input is directly converted to an integer and stored in the variable `seconds`.
+
+5. After collecting the user's inputs for days, hours, minutes, and seconds, the code calculates the total time in seconds by adding up the values stored in the `days`, `hours`, `minutes`, and `seconds` variables. This total time in seconds is stored in the variable `time`.
+
+6. The code then prints the total time in seconds using the `print` function.
+
+In summary, this code takes user inputs for various time units (days, hours, minutes, and seconds), converts them to seconds, and calculates the total time in seconds, which is then displayed to the user.
 
 ## Program 63
+**Write a Python program to get an absolute file path.**
+
+### Code Explanation
+The provided code defines a Python function named `absolute_file_path` that takes a single parameter called `path_fname`. This function is designed to return the absolute file path of a given file or path. Here's an explanation of the code:
+
+1. `import os`: This line imports the Python `os` module, which provides functions for interacting with the operating system, including working with file paths and directories.
+
+2. `os.path.abspath(path_fname)`: This line uses the `os.path.abspath()` function to obtain the absolute file path of the file or directory specified by the `path_fname` parameter. The `os.path.abspath()` function takes a relative or absolute path as its argument and returns the absolute path to that file or directory.
+
+3. The function `absolute_file_path(path_fname)` is defined and returns the result of `os.path.abspath(path_fname)`.
+
+4. The code then calls the `absolute_file_path` function with the argument `"test.txt"` and stores the result in a variable. It retrieves the absolute path of the file named "test.txt."
+
+5. Finally, it prints the result using the `print` function, which will display the absolute file path of "test.txt" to the console.
+
+So, when you run this code with the argument "test.txt," it will print the absolute file path of "test.txt" on your system. The absolute file path is the full path to the file, including the directory structure, making it unique and not dependent on the current working directory.
 
 ## Program 64
+**Write a Python program that retrieves the date and time of file creation and modification.**
+
+### Code Explanation
+The provided code is a Python script that uses the `os.path` and `time` modules to work with file system paths and timestamps. It retrieves and prints the last modified and creation timestamps of a file named "test.txt" in a human-readable format. Here's a step-by-step explanation of the code:
+
+1. Importing necessary modules:
+   - `import os.path, time`: This line imports two Python modules, `os.path` and `time`, which are used to interact with file paths and work with timestamps.
+
+2. Retrieving and printing the last modified timestamp:
+   - `os.path.getmtime("test.txt")` is used to get the last modified timestamp of the file "test.txt" in the form of a floating-point number. This timestamp represents the time when the file was last modified in seconds since the epoch (a fixed reference point in time).
+   - `time.ctime(...)` is a function from the `time` module that converts a timestamp (given in seconds since the epoch) into a human-readable string format. It returns a string in the format "Day Month Day_of_the_month HH:MM:SS Year" (e.g., "Tue Oct 31 12:34:56 2023").
+   - `print("Last modified: %s" % time.ctime(os.path.getmtime("test.txt")))` prints the last modified timestamp of the file "test.txt" in a human-readable format. The `%s` in the string is a placeholder that will be replaced with the result of `time.ctime(...)`.
+
+3. Retrieving and printing the creation timestamp:
+   - `os.path.getctime("test.txt")` is used to get the creation timestamp of the file "test.txt" in the same format as the last modified timestamp.
+   - `print("Created: %s" % time.ctime(os.path.getctime("test.txt")))` prints the creation timestamp of the file "test.txt" in a human-readable format, similar to how the last modified timestamp was printed.
+
+In summary, this code demonstrates how to obtain and display the last modified and creation timestamps of a file in a human-readable format using the `os.path` and `time` modules.
 
 ## Program 65
+**Write a Python program that converts seconds into days, hours, minutes, and seconds.**
+
+### Code Explanation
+The code you provided is a Python script that prompts the user to input a time duration in seconds, then converts and breaks down that duration into days, hours, minutes, and seconds, and finally prints the breakdown in the format "d:h:m:s".
+
+Here's a step-by-step explanation of the code:
+
+1. The script starts by prompting the user to input a time duration in seconds and converts the input to a float, storing it in the variable `time`.
+
+2. It calculates the number of full days in the given time duration by performing integer division (`//`) on the `time` variable, using the number of seconds in a day (24 hours * 3600 seconds). The result is stored in the `day` variable.
+
+3. The `time` variable is then updated to hold the remaining seconds after subtracting the full days. This is done using the modulo operator (`%`).
+
+4. Next, the code calculates the number of full hours in the remaining time in a similar manner. It performs integer division to get the number of hours and updates the `time` variable to hold the remaining seconds after subtracting the full hours.
+
+5. The code proceeds to calculate the number of full minutes in the remaining time. Again, it uses integer division and updates the `time` variable to hold the remaining seconds after subtracting the full minutes.
+
+6. The 'time' variable now represents the remaining seconds, which is essentially the number of seconds.
+
+7. Finally, the code prints the time duration in the format "d:h:m:s" using string formatting (`%d` is used to format integers). It substitutes the values of `day`, `hour`, `minutes`, and `seconds` into the format string to display the breakdown.
+
+In summary, this code takes a time duration in seconds, converts it into days, hours, minutes, and seconds, and then prints the breakdown in a user-friendly format.
 
 ## Program 66
+**Write a Python program to calculate the body mass index.**
+
+### Code Explanation
+This code snippet is a Python program that calculates a person's Body Mass Index (BMI) based on their input of height in feet and weight in kilograms. It then rounds the BMI to two decimal places and prints the result.
+
+Here's a step-by-step explanation of the code:
+
+1. `height = float(input("Input your height in Feet: "))`: This line prompts the user to enter their height in feet and stores the input as a floating-point number in the `height` variable. The `float(input())` combination is used to convert the user's input (which is initially a string) into a floating-point number.
+
+2. `weight = float(input("Input your weight in Kilograms: "))`: Similarly, this line prompts the user to input their weight in kilograms and converts the input to a floating-point number, storing it in the `weight` variable.
+
+3. `bmi = weight / (height * height)`: This line calculates the BMI using the formula for BMI, which is weight (in kilograms) divided by the square of height (in meters). Since the height is provided in feet, it should typically be converted to meters before using it in the formula. However, this code snippet does not include the conversion, so the result will not be in standard units. It's essential to convert feet to meters by dividing the height by 3.281 to get accurate results.
+
+4. `rounded_bmi = round(bmi, 2)`: This line rounds the calculated BMI to two decimal places using the `round()` function and stores it in the `rounded_bmi` variable.
+
+5. `print("Your body mass index is: ", rounded_bmi)`: Finally, this line prints the calculated BMI with a message "Your body mass index is:" followed by the rounded BMI value.
+
+It's important to note that the code does not include the necessary conversion from feet to meters for the height input, which can lead to incorrect BMI calculations. To calculate BMI accurately, you should convert the height from feet to meters by dividing it by 3.281 (1 meter = 3.281 feet).
 
 ## Program 67
+**Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure.**
+
+### Code Explanation
+The provided code is a Python script that takes user input for pressure in kilopascals (kPa) and then converts this pressure into three different units: pounds per square inch (psi), millimeters of mercury (mmHg), and atmospheres (atm). After the conversions, it prints out the pressure in each of these units with two decimal places.
+
+Here's a step-by-step explanation of the code:
+
+1. `kpa = float(input("Input pressure in kilopascals: "))`: This line prompts the user to input a pressure value in kilopascals and stores it as a floating-point number in the variable `kpa`.
+
+2. `psi = kpa / 6.89475729`: This line converts the input pressure in kilopascals to pounds per square inch (psi). It does this by dividing the pressure in kPa by the conversion factor, which is approximately 6.89475729. The result is stored in the variable `psi`.
+
+3. `mmhg = kpa * 760 / 101.325`: This line converts the input pressure in kilopascals to millimeters of mercury (mmHg). It does this by multiplying the pressure in kPa by the ratio of 760 (the number of mmHg in 1 atm) to 101.325 (standard atmospheric pressure in kPa). The result is stored in the variable `mmhg`.
+
+4. `atm = kpa / 101.325`: This line converts the input pressure in kilopascals to atmospheres (atm). It does this by dividing the pressure in kPa by the standard atmospheric pressure, which is 101.325 kPa. The result is stored in the variable `atm`.
+
+5. `print("The pressure in pounds per square inch: %.2f psi" % (psi))`: This line prints the pressure in pounds per square inch (psi) with two decimal places. It uses string formatting to insert the value of `psi` into the printed message.
+
+6. `print("The pressure in millimeters of mercury: %.2f mmHg" % (mmhg))`: This line prints the pressure in millimeters of mercury (mmHg) with two decimal places, similar to the previous line.
+
+7. `print("Atmosphere pressure: %.2f atm." % (atm))`: This line prints the pressure in atmospheres (atm) with two decimal places, again using string formatting.
+
+So, the code is essentially a pressure unit conversion tool that takes a user's input in kilopascals and converts it to other common pressure units, displaying the results in a user-friendly format.
 
 ## Program 68
+**Write a Python program to calculate sum of digits of a number.**
+
+### Code Explanation
+The provided code is a Python program that takes a four-digit number as input from the user and then extracts and calculates the sum of its individual digits.
+
+Here's a step-by-step explanation of the code:
+
+1. The user is prompted to input a four-digit number using the `input` function. The input is expected to be a string.
+
+2. The input is converted to an integer using `int(input(...))`. This step ensures that the user's input is treated as a numerical value.
+
+3. The code then extracts each digit of the four-digit number using integer division and subtraction. The digits are stored in the following variables:
+   - `x` represents the thousands digit. It is obtained by performing integer division of the input number by 1000.
+   - `x1` represents the hundreds digit. It is obtained by subtracting the thousands digit (x) multiplied by 100 from the input number and then performing integer division by 100.
+   - `x2` represents the tens digit. It is obtained by subtracting the thousands digit (x) multiplied by 1000 and the hundreds digit (x1) multiplied by 100 from the input number and then performing integer division by 10.
+   - `x3` represents the ones digit. It is obtained by subtracting the thousands digit (x), hundreds digit (x1), and tens digit (x2) from the input number.
+
+4. The code calculates the sum of the individual digits (x, x1, x2, and x3) and stores it in a variable.
+
+5. Finally, the code prints the result, displaying the sum of the digits in the original four-digit number.
+
+The code's purpose is to extract and compute the sum of the digits in a four-digit number provided by the user. It does this by using integer division and subtraction operations to isolate each digit and then adding them together to find the sum.
 
 ## Program 69
+**Write a Python program to sort three integers without using conditional statements and loops.**
+
+### Code Explanation
+The code you provided prompts the user to input three integers, which are then converted into variables `x`, `y`, and `z`. It performs the following operations:
+
+1. User Input: The code uses the `input()` function to prompt the user to input three integers, which are stored in variables `x`, `y`, and `z`. These integers represent the three values you want to compare and sort.
+
+2. Minimum Value: The `min()` function is used to find the minimum value among `x`, `y`, and `z`, and the result is stored in the variable `a1`.
+
+3. Maximum Value: The `max()` function is used to find the maximum value among `x`, `y`, and `z`, and the result is stored in the variable `a3`.
+
+4. Middle Value: To find the middle value (i.e., the value that is not the minimum or maximum), the code subtracts the minimum (`a1`) and maximum (`a3`) from the sum of `x`, `y`, and `z`. The result is stored in the variable `a2`.
+
+5. Sorting: Finally, the code prints the three values, `a1`, `a2`, and `a3`, in sorted order. This ensures that the values are displayed from the smallest (`a1`) to the largest (`a3`).
+
+In summary, this code takes three input integers, determines their minimum, maximum, and middle values, and then displays these values in sorted order.
 
 ## Program 70
+**Write a Python program to sort files by date.**
+
+### Code Explanation 
+The provided code is a Python script that uses the `glob` and `os` modules to perform the following tasks:
+
+1. Import the necessary libraries:
+   - `glob`: This module is used to find all files matching a specified pattern in a directory.
+   - `os`: This module provides a way to interact with the operating system, and it's used in this code to access file metadata.
+
+2. Use the `glob.glob("*.txt")` function to find all files in the current directory with a ".txt" file extension. This function searches for files with names ending in ".txt" and returns a list of file paths.
+
+3. Sort the list of file names based on their modification time (timestamp). The `os.path.getmtime` function is used to retrieve the modification time of each file, and `files.sort()` is used to sort the list of file paths based on these modification times in ascending order. This means that the files that were modified earlier will appear first in the list, and the most recently modified files will appear last.
+
+4. Finally, the script prints the sorted list of file names one per line using `print("\n".join(files))`. The `join` method concatenates the elements of the `files` list into a single string with each file name on a separate line, and `print` displays the result.
+
+In summary, this code finds and lists all the ".txt" files in the current directory, sorted in ascending order of their modification times, and prints the sorted list to the console. This can be useful for analyzing and working with a group of text files based on their modification timestamps.
 
 ## Program 71
+**Write a Python program to get a directory listing, sorted by creation date.**
+
+### Code Explanation 
+This Python code is a script that takes a directory path as a command-line argument and lists the files in that directory, sorted by their creation time. It uses various modules like 'stat', 'os', 'sys', and 'time' to accomplish this task. Here's a breakdown of how the code works:
+
+1. Import Necessary Modules:
+   - `stat` module is used to work with file status.
+   - `os` module is used for various operating system interactions.
+   - `sys` module is used for handling command-line arguments.
+   - `time` module is used for working with time-related functions.
+
+2. Determine the Directory Path:
+   - The script first checks the number of command-line arguments provided (via `sys.argv`).
+   - If there are two arguments, it assumes that the second argument (index 1) is the directory path.
+   - If there's only one argument or none, it uses the current directory ('.') as the default directory path.
+
+3. Generate a Generator Expression for File Paths:
+   - The script generates a generator expression that yields the full path for each file in the specified directory using `os.listdir()` and `os.path.join()`.
+   - This creates a generator of file paths within the specified directory.
+
+4. Generate a Generator Expression for File Status and Paths:
+   - Another generator expression is created, which pairs the file's status information (retrieved using `os.stat()`) with its corresponding path.
+
+5. Filter Regular Files and Extract Creation Times:
+   - The script filters this list of file status and paths to keep only regular files (using `S_ISREG`) and extracts their creation times (using `ST_CTIME`).
+   - The result is a generator of tuples, each containing the creation time and the file's path.
+
+6. Sort Files by Creation Time:
+   - The script sorts the list of tuples based on the creation times (`ST_CTIME`) in ascending order using `sorted()`. This means the oldest files will appear first in the list.
+
+7. Print Sorted List:
+   - Finally, the sorted list is iterated over, and for each file, it prints the creation time (formatted as a human-readable string using `time.ctime()`) and the file name (obtained from the path using `os.path.basename()`).
+
+In summary, this code allows you to provide a directory path as a command-line argument, and it will list the files in that directory sorted by their creation time. It filters out non-regular files (such as directories or symbolic links) and displays the results in chronological order.
 
 ## Program 72
+**Write a Python program to get the details of the math module.**
+
+### Code Explanation
+The provided Python code imports the `math` module and then uses the `dir` function to obtain a list of names (i.e., functions and constants) available within the `math` module. Here's a breakdown of the code:
+
+1. `import math`: This line imports the Python `math` module. The `math` module provides a set of mathematical functions and constants for performing various mathematical operations.
+
+2. `math_ls = dir(math)`: The `dir` function is used to retrieve a list of names (i.e., attributes) that are defined within the `math` module. This list will include all the functions, constants, and other objects available in the `math` module.
+
+3. `print(math_ls)`: Finally, the code prints the list of names stored in the `math_ls` variable. This list will include all the functions and constants provided by the `math` module, allowing you to see what mathematical operations and values are available for use in your Python script.
+
+By executing this code, you will get an output that looks something like this:
+
+```
+['acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+```
+
+This output provides you with the list of functions and constants available in the `math` module, and you can use these names to perform various mathematical operations in your Python code.
 
 ## Program 73
+**Write a Python program to calculate the midpoints of a line.**
+
+### Code Explanation 
+Certainly! The provided code is a Python program that calculates the midpoint of a line segment using the coordinates of its two endpoints. Here's a breakdown of the code:
+
+1. The program starts with a message to inform the user about its purpose, which is to calculate the midpoint of a line.
+
+2. The program then prompts the user to enter the x and y coordinates of the first endpoint of the line. It uses the `input` function to take user input and converts it to floating-point numbers using `float()`. The user's input is stored in variables `x1` and `y1`.
+
+3. Next, the program prompts the user to enter the x and y coordinates of the second endpoint of the line. The user's input for the second endpoint is stored in variables `x2` and `y2`.
+
+4. The program calculates the x-coordinate of the midpoint of the line using the formula `(x1 + x2) / 2` and stores the result in the variable `x_m_point`.
+
+5. Similarly, it calculates the y-coordinate of the midpoint of the line using the formula `(y1 + y2) / 2` and stores the result in the variable `y_m_point`.
+
+6. A blank line is printed to separate the user input section from the results section.
+
+7. The program then prints a message to indicate that it is displaying the midpoint of the line.
+
+8. It prints the x-coordinate of the midpoint using the `print` statement, along with a message to clarify what the value represents.
+
+9. It also prints the y-coordinate of the midpoint using the `print` statement, again with a message to clarify the value.
+
+Here's an example of how the program might work:
+```
+Calculate the midpoint of a line :
+The value of x (the first endpoint) 2
+The value of y (the first endpoint) 3
+The value of x (the second endpoint) 8
+The value of y (the second endpoint) 7
+
+The midpoint of the line is :
+The midpoint's x value is:  5.0
+The midpoint's y value is:  5.0
+```
+
+In this example, the program takes the coordinates of the first endpoint (2, 3) and the second endpoint (8, 7) and calculates the midpoint, which is (5, 5). It then displays the x and y coordinates of the midpoint.
 
 ## Program 74
+**Write a Python program to hash a word.**
+
+### Code Explanation
+The provided code is a Python script that calculates the Soundex code for a given input word. Soundex is a phonetic algorithm used to index and compare similar-sounding words, particularly surnames. It assigns a code to words based on their pronunciation, making it useful for searching and matching names that sound similar but are spelled differently.
+
+Here's a breakdown of the code:
+
+1. `soundex` List:
+   - This list maps characters to their Soundex codes. The list is used to convert individual characters in the input word into their corresponding Soundex values.
+
+2. User Input:
+   - The user is prompted to input a word to be hashed.
+
+3. Uppercase Conversion:
+   - The input word is converted to uppercase. This ensures that the Soundex algorithm treats both uppercase and lowercase characters the same way.
+
+4. Initialization of `coded`:
+   - A variable named `coded` is initialized with the first character of the input word. This character will be part of the final Soundex code.
+
+5. Loop Over Remaining Characters:
+   - The script uses a loop to iterate over the remaining characters in the input word (excluding the first character).
+   - For each character `a` in the word, it calculates the corresponding Soundex code from the `soundex` list. This is done by converting the character to its ASCII code (using `ord(a)`) and then using that code to index the `soundex` list.
+   - The calculated Soundex code is then appended to the `coded` variable.
+
+6. Output:
+   - Two blank lines are printed to create some space in the console output for readability.
+   - The final Soundex code for the input word is displayed in the console with the message "The coded word is: " followed by the `coded` variable.
+
+The code performs the Soundex encoding process for the input word and provides the Soundex code as output. Soundex codes are typically used for indexing and searching databases where similar-sounding names or words need to be matched, even if their spellings are slightly different.
 
 ## Program 75
+**Write a Python program to get the copyright information and write Copyright information in Python code.**
+
+### Code Explanation
+The provided Python code is a simple script that uses the `sys` module to access and display copyright information about Python. Here's a step-by-step explanation of the code:
+
+1. Import the `sys` module:
+   ```python
+   import sys
+   ```
+   This line imports the `sys` module, which provides access to various system-specific parameters and functions. In this code, it is used to access Python interpreter variables and functions.
+
+2. Display a header for Python copyright information:
+   ```python
+   print("\nPython Copyright Information")
+   ```
+   This line prints a header that says "Python Copyright Information." The "\n" character sequence is used to insert a newline before the header for better readability.
+
+3. Display the copyright information about Python using `sys.copyright`:
+   ```python
+   print(sys.copyright)
+   ```
+   This line prints the copyright information of the Python interpreter. The `sys.copyright` attribute contains a string that includes details about the Python copyright and licensing terms.
+
+4. Print an empty line for better readability:
+   ```python
+   print()
+   ```
+   This line prints an empty line, which provides a visual separation between the copyright information and any potential output that follows. It's used to make the output more readable.
+
+When you run this code, it will display the copyright information for the Python interpreter in your console or terminal, followed by an empty line for better formatting. The copyright information typically includes details about Python's license and copyright holder(s).
 
 ## Program 76
+
 
 ## Program 77
 
